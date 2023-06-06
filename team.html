@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Team</title>
+
+    <!-- Transiton effect -->
+    <style>
+      
+      .animated {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s, transform 1s;
+        animation: slideInUp 1s ease;
+        animation-fill-mode: both;
+      }
+  
+      @keyframes slideInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(50px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+
+    <script>
+      // Function to check if an element is in the viewport
+      function isInViewport(element) {
+        var rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+  
+      // Function to handle scroll event
+      function handleScroll() {
+        var elements = document.querySelectorAll('.animated');
+  
+        elements.forEach(function(element) {
+          if (isInViewport(element)) {
+            element.classList.add('visible');
+          } else {
+            element.classList.remove('visible');
+          }
+        });
+      }
+  
+      // Attach scroll event listener
+      window.addEventListener('scroll', handleScroll);
+  
+      // Function to handle page load event
+      window.addEventListener('load', function() {
+        var elements = document.querySelectorAll('.animated');
+  
+        elements.forEach(function(element) {
+          element.classList.add('visible');
+        });
+      });
+    </script>
+
+</head>
+<body>
+    <!-- Header Section -->
+  
+    <header class="text-gray-400 bg-gray-900 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+          <a href="https://www.google.com" class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
+            <img src="1 Final Logo.png"  class="w-10 h-10 text-white p-1 bg-indigo-500 rounded-full" viewBox="0 0 4 4">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+            </svg>
+            <span class="ml-3 text-xl">E-Vishvaas</span>
+          </a>
+          <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
+            <a href="https://www.google.com" class="mr-5 hover:text-white">Home</a>
+          </nav>
+        </div>
+    </header>
+    
+    
+    <!-- Team Section -->
+    <section class="text-gray-400 bg-gray-900 body-font">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-20">
+            <h1 class="text-2xl font-medium title-font mb-4 text-white tracking-widest animated">OUR TEAM</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base  animated">Our team is united by a shared passion for improving healthcare outcomes for making high-quality medical technology accessible to all. We work collaboratively with diverse expertise, leveraging the best of our skills, to design and develop in medical technology.
+              <br><br>Our team culture is centered around collaboration, innovation and inclusivity. We are a diverse group of individuals with a wide range of backgrounds and skills, but we all share a common goal of improving healthcare outcomes for all.
+
+              We value open communication and encourage team members to share their ideas and perspectives to drive innovation. We strive to foster an inclusive and welcoming culture where everyone feels supported and respected.</p>
+          </div>
+          
+          <hr style="margin-left: 25%; margin-right: 25%;">
+          <br><br>
+          <div class="flex flex-wrap -m-6">
+            <!-- Team Member 1 -->
+            <div class="p-4 lg:w-1/5 animated">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg object-cover object-center sm:mb-0 mb-4" src="Pic Srajan Dikshit.jpeg">
+              </div>
+              <div class="text-center">
+                <h2 class="title-font font-medium text-base text-white"">Srajan Dikshit</h2>
+                <h3 class="text-gray-500 mb-3">Director</h3>
+              </div>
+            </div>
+            
+            <!-- Team Member 2 -->
+            <div class="p-4 lg:w-1/5 animated">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg object-cover object-center sm:mb-0 mb-4" src="Akshit Pic latest.png">
+              </div>
+              <div class="text-center">
+                <h2 class="title-font font-medium text-base text-white">Akshit Sood</h2>
+                <h3 class="text-gray-500 mb-3">Director</h3>
+              </div>
+            </div>
+            
+            <!-- Team Member 3 -->
+            <div class="p-4 lg:w-1/5 animated">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg object-cover object-center sm:mb-0 mb-4" src="Pic Ravinder K Duvedi.jpeg">
+              </div>
+              <div class="text-center">
+                <h2 class="title-font font-medium text-base text-white">Dr. Ravinder Kumar Duvedi</h2>
+                <h3 class="text-gray-500 mb-3">Mentor</h3>
+              </div>
+            </div>
+            
+            <!-- Team Member 4 -->
+            <div class="p-4 lg:w-1/5 animated">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg object-cover object-center sm:mb-0 mb-4" src="Pic Vineet Srivastava.jpeg">
+              </div>
+              <div class="text-center">
+                <h2 class="title-font font-medium text-base text-white">Dr. Vineet Srivastava</h2>
+                <h3 class="text-gray-500 mb-3">Mentor</h3>
+              </div>
+            </div>
+            
+            <!-- Team Member 5 -->
+            <div class="p-4 lg:w-1/5 animated">
+              <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                <img alt="team" class="flex-shrink-0 rounded-lg object-cover object-center sm:mb-0 mb-4" src="Pic Mandeep Sir 2.jpeg">
+              </div>
+              <div class="text-center">
+                <h2 class="title-font font-medium text-base text-white">Dr. Mandeep Singh</h2>
+                <h3 class="text-gray-500 mb-3">Mentor</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- Join Us Section -->
+    <section class="text-gray-400 bg-gray-900 body-font relative">
+        <div class="container px-5 py-24 mx-auto">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white animated">Join Us</h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base animated">Kindly fill out the form to apply for an open position at our organization.</p>
+          </div>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLScVkyqLZKesLYx30eLCsWhJYbnYdmlMAFVVVRs3jdBrrAn8lQ/viewform">
+            <div class="p-2 w-full">
+              <button class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg animated">Apply Now</button>
+            </div>
+          </a>
+          <div class="p-2 w-full pt-8 mt-8 border-t border-gray-800 text-center">
+            <div class="flex flex-col text-center w-full mb-12">
+              <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-white animated">Contact Us</h1>
+              <p class="lg:w-2/3 mx-auto leading-relaxed text-base animated">Contact us to get more information about the project.</p>
+            </div>
+            <div class="animated">
+            <a class="text-indigo-400 animated" href="mailto:akshitsood.work@gmail.com">Akshit Sood</a>
+            <br>
+            <a class="text-indigo-400 animated" href="mailto:sdikshit_be19@thapar.edu">Srajan Dikshit</a>
+          </div>
+          </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+          <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+            <img src="1 Final Logo.png" class="w-10 h-10 text-white p-1 bg-indigo-500 rounded-full" viewBox="0 0 4 4">
+            <span class="ml-3 text-xl">E-Vishvaas</span>
+          </a>
+          <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4"> evishvaas@gmail.com | E-Vishvaas Technologies Pvt. Ltd : C-184 Industrial Area, Phase ­VIII­A, Sector 75, Mohali, Punjab 160071 | +91-9779979165
+          </p>
+          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            <a class="ml-3 text-gray-500" href="https://www.linkedin.com/company/e-vishvaas/about/">
+              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
+                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+    </footer>
+</body>
+</html>
