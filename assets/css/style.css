@@ -946,6 +946,7 @@ section {
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 400px;
+  margin-bottom: 20px ;
 }
 
 /*--------------------------------------------------------------
