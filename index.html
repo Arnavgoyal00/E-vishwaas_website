@@ -10,12 +10,12 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets\img\logo.png" rel="icon">
+  <link href="assets\img\logo.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -40,18 +40,28 @@
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center">
-
+    <div class="container d-flex">
+      <!-- <div class="logo-wrapper"> 
+        <a href="index.html" class="logo me-auto">
+          <img src="assets/img/logo.png" alt="">
+        </a>
+        <img src="assets/img/logo-overlay.png" alt="" class="logo-overlay">
+      </div> -->
+      <!-- Uncomment below if you prefer to use an image logo -->
       <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" ></a>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <h1 class="logo me-auto"><a href="index.html">E-Vishvaas</a></h1> -->
+  <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" style="width: 75px; height: 80px;"></a> -->
 
+      <!-- <h1 class="logo me-auto"><a href="index.html">E-Vishvaas</a></h1> -->
+       
       <nav id="navbar" class="navbar order-last order-lg-0">
+
         <ul>
-          <li><a class="nav-link scrollto " href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About US</a></li>
+          <li><a class="nav-link scrollto" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
           <li><a class="nav-link scrollto" href="#features">Products</a></li>
-          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#departments">Sponsors</a></li>
+          <li><a class="nav-link scrollto" href="#doctors">Team</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
           <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
@@ -71,11 +81,14 @@
             </ul>
           </li> -->
           <!-- <li><a class="nav-link scrollto" href="#contact">Contact</a></li> -->
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
 
-      <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline">Apply</span> Now</a>
+        </ul>
+
+        <i class="bi bi-list mobile-nav-toggle"></i>
+
+      </nav><!-- .navbar -->
+      <a href="#appointment" class="appointment-btn scrollto" style="margin-top: 2%;"><span class="d-none d-md-inline"></span>Apply Now</a>
+
 
     </div>
   </header><!-- End Header -->
@@ -91,7 +104,7 @@
         <!-- Slide 1 -->
         <div class="carousel-item active" style="background-image: url(assets/img/slide/slide-1.jpg)">
           <div class="container">
-            <h2>E-Vishvaas Technologies</h2>
+            <h1 style="font-family: 'Times New Roman', Times, serif; font-weight: bolder;" data-aos="in">E-Vishvaas Technologies</h1>
             <p>Revolutionizing healthcare for all, we empower access to quality medical care through cost-effective and innovative medical device and technology design. Our dedicated team collaborates to break down barriers and improve patient outcomes, striving for a future where everyone can benefit from advanced healthcare solutions.</p>
             <!-- <a href="#about" class="btn-get-started scrollto">Read More</a> -->
           </div>
@@ -133,37 +146,50 @@
     <!-- ======= Featured Services Section ======= -->
     <section id="featured-services" class="featured-services">
       <div class="container" data-aos="fade-up">
-
+        
         <div class="row">
+          
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <a href="#appointment" style="color: black;">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              
               <div class="icon"><i class="fas fa-heartbeat"></i></div>
-              <h4 class="title"><a href="#appointment">Applications Open</a></h4>
-              <p class="description">Join our dynamic team and make a difference in the world of healthcare.</p>
+              
+              <h4 class="title">Applications Open</h4>
+             <p class="description" >Join our dynamic team and make a difference in the world of healthcare.</p>
+              </a>
             </div>
+         
           </div>
+      
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <a href="#features" style="color: black;">
               <div class="icon"><i class="fas fa-pills"></i></div>
-              <h4 class="title"><a href="#features">Products</a></h4>
+              <h4 class="title">Products</h4>
               <p class="description">Discover our exceptional products that redefine quality and performance</p>
+            </a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <a href="#team" style="color: black;">
               <div class="icon"><i class="fas fa-thermometer"></i></div>
-              <h4 class="title"><a href="#team">Team</a></h4>
+              <h4 class="title">Team</h4>
               <p class="description">Meet our exceptional team driving innovation and success.</p>
+            </a>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <a href="#contact" style="color: black;">
               <div class="icon"><i class="fas fa-dna"></i></div>
-              <h4 class="title"><a href="#contact">Our Contact</a></h4>
+              <h4 class="title">Our Contact</h4>
               <p class="description">Get in touch with us and let's start a conversation!</p>
+            </a>
             </div>
           </div>
 
@@ -378,7 +404,7 @@
         </form> -->
 
       <!--</div>
-    </section><!-- End Appointment Section -->
+    </section> End Appointment Section -->
 
     <!-- ======= Departments Section =======
     <section id="departments" class="departments">
@@ -474,7 +500,7 @@
                 <h3>Saul Goodman</h3>
                 <h4>Ceo &amp; Founder</h4>
               </div>
-            </div><!-- End testimonial item -->
+            </div> End testimonial item -->
 
             <!-- <div class="swiper-slide">
               <div class="testimonial-item">
@@ -535,8 +561,39 @@
       </div>
     </section>End Testimonials Section -->
 
+    <section id="departments" class="departments">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our Sponsors</h2>
+          <div class="row">
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\neotron.jpg"><img src="assets\img\neotron.jpg" class="img-fluid" alt=""></a></div>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\logo_msh@2x.png  "><img src="assets\img\logo_msh@2x.png" class="img-fluid" alt=""></a></div>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\download (1).jpeg"><img src="assets\img\download (1).jpeg" class="img-fluid" alt=""></a></div>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="100">
+              <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\download.jpeg"><img src="assets\img\download.jpeg" class="img-fluid" alt=""></a></div>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="200">
+              <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\step_tiet.jpg"><img src="assets\img\step_tiet.jpg" class="img-fluid" alt=""></a></div>
+            </div>
+            <div class="col-lg-4 col-md-6 icon-box" data-aos="zoom-in" data-aos-delay="300">
+              <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\ti.png"><img src="assets\img\ti.png" class="img-fluid" alt=""></a></div>
+            </div>
+          </div>
+        </div>
+        </div>
+        </section>
+
+          
+
     <!-- ======= Team Section ======= -->
-    <section id="team" class="doctors section-bg">
+    <section id="doctors" class="doctors section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -551,10 +608,11 @@
               <div class="member-img">
                 <img src="assets/img/doctors/team1.jpeg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href="mailto:rduvedi@thapar.edu"><i class="material-icons">&#xe0be;</i>
+
+                  <a href="https://www.linkedin.com/in/dr-ravinder-kumar-duvedi-58007624/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -569,10 +627,10 @@
               <div class="member-img">
                 <img src="assets/img/doctors/team2.jpeg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href="mailto:vineet.srivastava@thapar.edu"><i class="material-icons">&#xe0be;</i>
+                  <a href="https://www.linkedin.com/in/vineet-srivastava-68b9aa10a/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -587,10 +645,10 @@
               <div class="member-img">
                 <img src="assets/img/doctors/team3.jpg" class="img-fluid" alt="">
                 <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+                  <!-- <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a> -->
+                  <a href="mailto:mdsingh@thapar.edu "><i class="material-icons">&#xe0be;</i>
+                  <a href="https://www.linkedin.com/in/mandeep-singh-8aa7a411/"><i class="bi bi-linkedin"></i></a>
                 </div>
               </div>
               <div class="member-info">
@@ -617,14 +675,15 @@
 
         <div class="gallery-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-1.jpg"><img src="assets/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-2.jpg"><img src="assets/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-3.jpg"><img src="assets/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-4.jpg"><img src="assets/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-5.jpg"><img src="assets/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-6.jpg"><img src="assets/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-7.jpg"><img src="assets/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
-            <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\1 (1).jpg"><img src="assets\img\gallery\1 (1).jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\2 (1).jpg"><img src="assets\img\gallery\2 (1).jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\3 (1).jpg"><img src="assets\img\gallery\3 (1).jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\g1.jpg"><img src="assets\img\gallery\g1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\g2.jpg"><img src="assets\img\gallery\g2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\g3.jpg"><img src="assets\img\gallery\g3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\g4.jpg"><img src="assets\img\gallery\g4.jpg" class="img-fluid" alt=""></a></div>
+            <!-- <div class="swiper-slide"><a class="gallery-lightbox" href="assets\img\gallery\g4.jpg"><img src="assets\img\gallery\g4.jpg" class="img-fluid" alt=""></a></div> -->
+            <!-- <div class="swiper-slide"><a class="gallery-lightbox" href="assets/img/gallery/gallery-8.jpg"><img src="assets/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div> -->
           </div>
           <div class="swiper-pagination"></div>
         </div>
@@ -699,12 +758,12 @@
   </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
+  <footer id="footer" >
+    <div class="footer-top"  style="background-color: white;">
+      <div class="container" >
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" >
             <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
                 <img src="assets/img/logo.png" height="230" alt=""
                      loading="lazy" />
@@ -727,7 +786,7 @@
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-6">
+          <div class="col-lg-3 col-md-6" >
 
           </div>
           <div class="col-lg-2 col-md-6 footer-links">
@@ -736,15 +795,17 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#about">About us</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#features">Products</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#departments">Sponsors</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#team">Team</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
             </ul>
+            <!-- <img src="assets\img\partner.jpg" alt="partner"> -->
           </div>
-
+         
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>E-Vishvaas</h3>
+              <h3>E-Vishvaas Technologies</h3>
               <p>
                 BLOCK-A, TSLAS BUILDING, <br>
                 THAPAR INSTITUTE OF ENGINEERING AND TECHNOLOGY<br><br>
@@ -766,7 +827,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>E-Vishvaas</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>E-Vishvaas Technologies</span></strong>. All Rights Reserved
       </div>
     </div>
   </footer><!-- End Footer -->
